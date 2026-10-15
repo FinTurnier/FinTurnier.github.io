@@ -18,6 +18,13 @@ author:
 url: "https://finturnier.github.io"
 baseurl: ""
 
+# GoatCounter endpoint for privacy-first visit analytics (analytics-001).
+# Blank disables tracking; script only renders in production builds, so
+# localhost previews are never counted. To persist sessions across days at
+# the cost of GDPR-style consent requirements, add before the script:
+#   window.goatcounter = {allow_local: true}
+analytics: "kemet101.goatcounter.com"
+
 # --- Build -------------------------------------------------------------------
 markdown: kramdown
 highlighter: rouge
