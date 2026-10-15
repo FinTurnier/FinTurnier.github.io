@@ -1,0 +1,83 @@
+# =============================================================================
+# Finly Turnier — Portfolio
+# Jekyll configuration for GitHub Pages
+# =============================================================================
+
+title: Finly Turnier
+tagline: Engineer — Aerospace, Mechanical & Software
+description: >-
+  Portfolio of Finly Turnier: software engineer with a mechanical and
+  aerospace engineering foundation. Projects, notes, lessons, and a
+  career timeline from engine hardware to full-stack development.
+author:
+  name: Finly Turnier
+  email: finly.turnier@gmail.com
+
+# --- GitHub Pages ------------------------------------------------------------
+# User site (FinTurnier.github.io): baseurl must stay "".
+url: "https://finturnier.github.io"
+baseurl: ""
+
+# --- Build -------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+# Notes/lessons carry a `date` as content metadata; publish them on that date
+# even if a build runs before it (docs dated "tomorrow" must still render).
+future: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Collections -------------------------------------------------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  notes:
+    output: true
+    permalink: /notes/:name/
+  lessons:
+    output: true
+    permalink: /lessons/:name/
+
+defaults:
+  - scope:
+      path: "_projects"
+    values:
+      layout: project
+  - scope:
+      path: "_notes"
+    values:
+      layout: note
+  - scope:
+      path: "_lessons"
+    values:
+      layout: note
+
+# --- Excludes ----------------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - docker-compose.yml
+  - .dockerignore
+  - init.sh
+  - AGENTS.md
+  - CLAUDE.md
+  - claude-progress.md
+  - session-handoff.md
+  - clean-state-checklist.md
+  - feature_list.json
+  - README.md
+  # Django playground lives in this directory but is not part of the
+  # published static site — keep it (and its database/uploads) out of _site.
+  - manage.py
+  - db.sqlite3
+  - jobs
+  - portfolio
+  - media
+  - static
+  - staticfiles

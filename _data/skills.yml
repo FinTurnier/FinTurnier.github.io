@@ -1,0 +1,41 @@
+# Skills grouped for the About/Resume pages. Rendered via .skills-groups.
+
+- group: Programming Languages
+  items:
+    - Python
+    - Java
+    - C / C++
+    - C#
+    - R
+
+- group: Frameworks & Libraries
+  items:
+    - Vue
+    - Flask
+    - Django
+    - Machine Learning / Deep Learning stacks
+
+- group: Engineering & Simulation
+  items:
+    - MATLAB / Simulink
+    - CATIA
+    - Siemens NX / Teamcenter
+    - SolidWorks
+    - Systems Tool Kit (STK)
+    - Finite Element Analysis
+
+- group: Data & Platforms
+  items:
+    - SQL
+    - Dataiku
+    - AWS
+    - Docker
+    - Linux
+    - XML / YAML configuration
+
+- group: Practices
+  items:
+    - Agile methodology
+    - Prototyping methodology
+    - GitHub / JIRA workflows
+    - MIPS architecture / embedded systems

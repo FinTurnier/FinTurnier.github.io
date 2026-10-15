@@ -1,0 +1,21 @@
+{% assign items = site[include.collection] | sort: "date" | reverse %}
+{% if include.collection == "projects" %}
+  {% assign items = site.projects | sort: "order" %}
+{% endif %}
+<ul class="card-grid">
+  {% for item in items limit:include.limit %}
+  <li class="card">
+    <p class="card-eyebrow">
+      {% if item.context %}{{ item.context }}
+      {% elsif item.date %}<time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>{% endif %}
+    </p>
+    <h3 class="card-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+    {% if item.lede %}<p class="card-lede">{{ item.lede }}</p>{% endif %}
+    {% if item.stack %}
+    <ul class="tag-list" aria-label="Stack">
+      {% for s in item.stack limit:4 %}<li class="tag">{{ s }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

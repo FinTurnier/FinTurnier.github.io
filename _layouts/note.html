@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="page note">
+  <header class="page-header">
+    <p class="eyebrow">{{ page.collection | capitalize | default: "Note" }}
+      {% if page.date %} · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    {% if page.tags %}
+    <ul class="tag-list" aria-label="Tags">
+      {% for t in page.tags %}<li class="tag">{{ t }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </header>
+  {{ content }}
+</article>

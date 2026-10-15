@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+# Matches the GitHub Pages build environment.
+gem "github-pages", group: :jekyll_plugins
+
+# Local preview convenience
+gem "webrick", "~> 1.8"
+
+# Verification (feature verify-002): link/render check on the built site
+gem "html-proofer"

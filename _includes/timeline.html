@@ -1,0 +1,24 @@
+{% comment %}
+Renders _data/timeline.yml as a vertical timeline.
+Each entry: { year_start, year_end (optional), title, org, location, summary, tags (optional), current (optional) }
+{% endcomment %}
+<ol class="timeline">
+  {% for entry in site.data.timeline %}
+  <li class="timeline-entry{% if entry.current %} timeline-entry--current{% endif %}">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+      <p class="timeline-dates">
+        {{ entry.year_start }}{% if entry.year_end %} – {{ entry.year_end }}{% elsif entry.current %} – Present{% endif %}
+      </p>
+      <h3 class="timeline-title">{{ entry.title }}</h3>
+      <p class="timeline-org">{{ entry.org }}{% if entry.location %} · {{ entry.location }}{% endif %}</p>
+      {% if entry.summary %}<p class="timeline-summary">{{ entry.summary }}</p>{% endif %}
+      {% if entry.tags %}
+      <ul class="tag-list" aria-label="Highlights">
+        {% for t in entry.tags %}<li class="tag">{{ t }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>

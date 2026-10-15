@@ -1,0 +1,82 @@
+# Career timeline — ordered most recent first.
+# Fields: year_start, year_end (omit if current), title, org, location,
+#         summary, tags (optional), current (optional)
+
+- year_start: 2025
+  title: M.S. Computer Science
+  org: Johns Hopkins University
+  location: Baltimore, MD
+  summary: >-
+    Concentration in Database Systems and Knowledge Management. Coursework spanning
+    algorithms, AI, applied machine learning, deep neural networks, computer
+    architecture, and real-time embedded systems.
+  tags: [Databases, Machine Learning, Deep Learning, Algorithms]
+
+- year_start: 2019
+  year_end: 2025
+  title: Senior Software Engineer — Methods & Tools, Full-Stack Development
+  org: Pratt & Whitney
+  location: East Hartford, CT
+  summary: >-
+    Built and improved web applications tracking engine repairs and parts. Drove
+    migration of in-production digital maintenance, repair, and overhaul tools to
+    AWS, including ingestion pipelines for extracted data. Produced a turnaround-time
+    monitoring method adopted to measure operational performance.
+  tags: [Full-Stack, AWS, Web Applications, Data Migration]
+
+- year_start: 2017
+  year_end: 2019
+  title: Mechanical Engineer — External Design, Producibility & Product Delivery
+  org: Pratt & Whitney
+  location: East Hartford, CT
+  summary: >-
+    Conducted tolerance studies and interface checks for external engine hardware,
+    completed design phases for engineering changes, and collaborated with suppliers
+    to resolve manufacturability issues on critical components. Completed integration
+    of redesigned Cold Fuel hardware.
+  tags: [Design, Tolerance Studies, Supplier Collaboration]
+  note: Concurrent rotation alongside analyst role
+
+- year_start: 2016
+  year_end: 2019
+  title: Mechanical Engineer — Lubrication & Thermal Management Systems Analyst
+  org: Pratt & Whitney
+  location: East Hartford, CT
+  summary: >-
+    Owned fleet trending reports for PW1500G/PW1900G engines, analyzing lubrication
+    and thermal system performance across the Next Generation Product Family.
+    Produced thermal predictions within 5-degree accuracy using MATLAB/Simulink
+    statistical models and supported PW1100G ground and flight testing on the flying
+    testbed. Wrote ad-hoc automation scripts to aid team decision-making.
+  tags: [MATLAB, Simulink, Data Analysis, Flight Test]
+
+- year_start: 2016
+  title: B.S. Mechanical Engineering
+  org: Florida International University
+  location: Miami, FL
+  summary: >-
+    Coursework in design optimization, system dynamics, thermal-fluid systems,
+    mechatronics, and robotics design. NSBE chapter Treasurer/Finance Chair.
+  tags: [Mechanical Engineering, Robotics, Mechatronics]
+
+- year_start: 2014
+  year_end: 2015
+  title: Design Engineer
+  org: AL Farooq Corporation
+  location: Miami, FL
+  summary: >-
+    Designed and evaluated glazing systems, consulting contractors on thermal
+    properties, structural limits, and zoning regulations. Reduced cost through
+    finite element analysis for preliminary structural assessments and verified
+    thermal compliance with Florida Building Code energy requirements.
+  tags: [FEA, Thermal Analysis, Building Code]
+
+- year_start: 2012
+  title: Engineering Physics / Interdisciplinary Studies
+  org: Embry-Riddle Aeronautical University
+  location: Daytona Beach, FL
+  summary: >-
+    Coursework in microcomputer and electronic instrumentation, software engineering
+    practices, signals and systems, electro-optical engineering, and orbital
+    mechanics — the first step from aerospace toward software.
+  tags: [Aerospace, Instrumentation, Orbital Mechanics]
